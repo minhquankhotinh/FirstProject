@@ -1,0 +1,25 @@
+#footer {
+    background: #e4e4e4;
+    margin-top: 10px;
+    padding-top: 15px;
+}
+
+#banner {
+    background: #1691d8;
+    padding-left: 10px;
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+
+#monitoring {
+    border: 1px #e4e4e4 solid;
+    border-radius: 4px;
+    padding: 20px;
+}
+
+#parameter_monitoring {
+    border: 2px #1691d8 solid;
+    border-radius: 4px;
+    box-shadow: 0 0 6px #ccc;
+    padding: 20px;
+}

@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Home monitoring</title>
+    <link href="/css/style.css" rel="stylesheet" />
+    <script src="/Scripts/jquery-2.0.3.min.js"></script>
+</head>
+<body>
+    <div class="mainContainer">
+        <h1>
+            HOME MONITORING
+        </h1>
+        <h2>
+            Sensor DHT22
+        </h2>
+        <p>
+            Temperature:
+            <span id="temperature">0</span>
+            <span> C</span>
+        </p>
+        <p>
+            Humidity:
+            <span id="humidity">0</span>
+            <span> %</span>
+        </p>
+        <h2>
+            Sensor SRF05
+        </h2>
+        <p>
+            Distance:
+            <span id="distance"> 10</span>
+            <span> cm</span>
+        </p>
+    </div>
+    
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/Scripts/sockethandle.js"></script>
+</body>
+</html>

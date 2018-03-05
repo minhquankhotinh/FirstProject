@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>SMART-UNIT</title>
+    <meta name="viewport" content="width-device-width, initial-scale-1.0" />
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/customs.css" rel="stylesheet" />
+	<script src="/js/jquery-2.0.3.min.js"></script>
+	<script src="/socket.io/socket.io.js"></script>
+    <script src="/js/sockethandle.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <div id="header">
+        <!-- Navigation bar -->
+        <nav class="navbar navbar-inverse navbar-static-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">SMART-UNIT</a>
+                </div>
+                <div>
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- end navigation bar -->
+        <!-- Banner for wesite -->
+        <div class="container">
+            <div id="banner" class="jumbotron">
+                <h2><b>SMART MORNITORING SYSTEM</b></h2>
+                <p>Monitor system over internet is more and more esier...</p>
+            </div>
+        </div>
+        <!-- end banner -->
+
+    </div>
+
+    <!-- end header -->
+
+    <div id="main">
+        <div class="container">
+            <div class="row" id="monitoring">
+                <div class="col-sm-4 displaying_parameter_area">
+
+                    <!-- Parameter area -->
+                    <div class="panel-group" id="parameter_monitoring">
+
+                        <!-- Temperature area -->
+                        <div class="panel panel-primary temperature_panel">
+                            <div class="panel-heading">
+                                <h2 class="panel-title" data-toggle="tooltip" data-placement="left" title="Current temperature">Temperature</h2>
+                            </div>
+                            <div class="panel-body">
+                                <h2 style="display: inline-block"><span class="label label-danger" id="temperature">40</span></h2>
+                                <h3 style="display: inline">&#8451</h3>  <!--degree celsiuse -->
+                            </div>
+                        </div>
+                        <!-- end temperature area-->
+                        <!-- Humidity area -->
+                        <div class="panel panel-primary humidity_pannel">
+                            <div class="panel-heading">
+                                <h2 class="panel-title" data-toggle="tooltip" data-placement="left" title="Current humidity">Humidity</h2>
+                            </div>
+                            <div class="panel-body">
+                                <h2 style="display: inline-block"><span class="label label-danger" id="humidity">60</span></h2>
+                                <h3 style="display: inline">%</h3>
+                            </div>
+                        </div>
+                        <!-- end humidity area -->
+                        <!-- Voltage area -->
+                        <div class="panel panel-primary voltage_pannel">
+                            <div class="panel-heading">
+                                <h2 class="panel-title" data-toggle="tooltip" data-placement="left" title="Measured voltage">Voltagle</h2>
+                            </div>
+                            <div class="panel-body">
+                                <h2 style="display: inline-block"><span class="label label-default" id="voltage">12</span></h2>
+                                <h3 style="display: inline">V</h3>
+                            </div>
+                        </div>
+                        <!-- end voltage area -->
+                        <!-- Open/Close door area -->
+                        <div class="panel panel-primary doorstatus_pannel">
+                            <div class="panel-heading" data-toggle="tooltip" data-placement="left" title="Current status of the door">
+                                <h3 class="panel-title">Door</h3>
+                            </div>
+                            <div class="panel-body">
+                                <h2><span class="label label-default" id="distance">OPEN</span></h2>
+                            </div>
+                        </div>
+                        <!-- end open/close door area -->
+                    </div>
+                    <!-- end parameter area -->
+                </div>
+
+                <!-- Monitoring graph area -->
+                <div class="col-sm-8 graph_area">
+                    <div class="panel panel-danger graph_panel">
+                        <div class="panel-heading" data-toggle="tooltip" data-placement="left" title="Current status of the door">
+                            <h3 class="panel-title">MONITORING GRAPH</h3>
+                        </div>
+                        <div class="panel-body">
+                            <p>Add graph for each parameter here</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- end monitoring graph area -->
+            </div>
+        </div>
+    </div>
+    <!-- end body content -->
+    <!-- Footer content -->
+    <div id="footer">
+        <div class="container-fluid">
+            <p>@Copyright 2015. <a href="http://www.toshiba-tsdv.com">Toshiba Software Development Vietnam</a></p>
+        </div>
+    </div>
+    <!-- end footer content -->
+</body>
+</html>
